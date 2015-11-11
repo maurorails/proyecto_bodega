@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  horaretiro: 2015-11-10
+  bodega_id: 
+  vendedor_id: 
+
+two:
+  horaretiro: 2015-11-10
+  bodega_id: 
+  vendedor_id: 

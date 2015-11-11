@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  columna: 1
+  fila: 1
+  producto_id: 
+
+two:
+  columna: 1
+  fila: 1
+  producto_id: 

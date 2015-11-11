@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Columna:</strong>
+  <%= @bodega.columna %>
+</p>
+
+<p>
+  <strong>Fila:</strong>
+  <%= @bodega.fila %>
+</p>
+
+<p>
+  <strong>Producto:</strong>
+  <%= @bodega.producto %>
+</p>
+
+<%= link_to 'Edit', edit_bodega_path(@bodega) %> |
+<%= link_to 'Back', bodegas_path %>

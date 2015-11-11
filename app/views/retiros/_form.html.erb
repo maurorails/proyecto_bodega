@@ -1,0 +1,29 @@
+<%= form_for(@retiro) do |f| %>
+  <% if @retiro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@retiro.errors.count, "error") %> prohibited this retiro from being saved:</h2>
+
+      <ul>
+      <% @retiro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :horaretiro %><br>
+    <%= f.date_select :horaretiro %>
+  </div>
+  <div class="field">
+    <%= f.label :bodega_id %><br>
+    <%= f.text_field :bodega_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vendedor_id %><br>
+    <%= f.text_field :vendedor_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Horaretiro:</strong>
+  <%= @retiro.horaretiro %>
+</p>
+
+<p>
+  <strong>Bodega:</strong>
+  <%= @retiro.bodega %>
+</p>
+
+<p>
+  <strong>Vendedor:</strong>
+  <%= @retiro.vendedor %>
+</p>
+
+<%= link_to 'Edit', edit_retiro_path(@retiro) %> |
+<%= link_to 'Back', retiros_path %>

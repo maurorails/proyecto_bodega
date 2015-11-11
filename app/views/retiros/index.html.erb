@@ -1,0 +1,29 @@
+<h1>Listing retiros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Horaretiro</th>
+      <th>Bodega</th>
+      <th>Vendedor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @retiros.each do |retiro| %>
+      <tr>
+        <td><%= retiro.horaretiro %></td>
+        <td><%= retiro.bodega %></td>
+        <td><%= retiro.vendedor %></td>
+        <td><%= link_to 'Show', retiro %></td>
+        <td><%= link_to 'Edit', edit_retiro_path(retiro) %></td>
+        <td><%= link_to 'Destroy', retiro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Retiro', new_retiro_path %>

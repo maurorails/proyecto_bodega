@@ -1,0 +1,29 @@
+<h1>Listing bodegas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Columna</th>
+      <th>Fila</th>
+      <th>Producto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bodegas.each do |bodega| %>
+      <tr>
+        <td><%= bodega.columna %></td>
+        <td><%= bodega.fila %></td>
+        <td><%= bodega.producto %></td>
+        <td><%= link_to 'Show', bodega %></td>
+        <td><%= link_to 'Edit', edit_bodega_path(bodega) %></td>
+        <td><%= link_to 'Destroy', bodega, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bodega', new_bodega_path %>
